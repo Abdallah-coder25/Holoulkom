@@ -1,0 +1,166 @@
+<!-- our porjet -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - Holoulkom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+</head>
+<body>
+    <header>
+    <nav class="nav-container">        <div class="nav-left">
+            <img src="./assets/images/logo/logo.png" alt="Holoulkom Logo" class="logo-img">
+        </div>
+        <button class="menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-right" id="navLinks">
+            <a href="AboutOurCompany.html">About</a>
+            <a href="Message.html">Message</a>
+            <a href="Vission&Mission.html">Vision & Mission</a>
+            <a href="OurValues&OurServices.html">Our Values & Our Services</a>
+            <a href="Parteners.html">Partners & Sources</a>
+            <a href="OurProject.html">Our Projects</a>
+            <a href="WhyChooseUs.html">Why Choose Us</a>
+        </div>
+    </nav>
+</header>
+
+    <main class="projects-section">
+        <h1 class="section-title">Our Projects</h1>
+        
+        <div class="project-filters">
+            <button class="filter-btn active" data-category="all">All Projects</button>
+            <button class="filter-btn" data-category="residential">Residential</button>
+            <button class="filter-btn" data-category="commercial">Commercial</button>
+            <button class="filter-btn" data-category="infrastructure">Infrastructure</button>
+            <button class="filter-btn" data-category="government">Government</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card fade-in" data-category="residential">
+                <div class="project-image">
+                    <img src="assets/images/projects/sector1.png" alt="Residential Complex">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Modern Residential Complex</h3>
+                    <div class="project-categories">
+                        <span class="category-tag">Residential</span>
+                        <span class="category-tag">2023</span>
+                    </div>
+                    <p class="project-description">Luxury residential complex featuring modern amenities and sustainable design.</p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Duration: 24 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Riyadh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in" data-category="commercial">
+                <div class="project-image">
+                    <img src="assets/images/projects/sector2.png" alt="Commercial Tower">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Business District Tower</h3>
+                    <div class="project-categories">
+                        <span class="category-tag">Commercial</span>
+                        <span class="category-tag">2024</span>
+                    </div>
+                    <p class="project-description">State-of-the-art commercial tower with smart building technology.</p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Duration: 36 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jeddah</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in" data-category="infrastructure">
+                <div class="project-image">
+                    <img src="assets/images/projects/sector3.png" alt="Infrastructure Project">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Smart City Infrastructure</h3>
+                    <div class="project-categories">
+                        <span class="category-tag">Infrastructure</span>
+                        <span class="category-tag">2025</span>
+                    </div>
+                    <p class="project-description">Comprehensive infrastructure development for smart city initiative.</p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Duration: 48 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>NEOM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Details Modal -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fas fa-phone"></i> +966 57 002 8089</a>
+                <a href="#"><i class="fas fa-at"></i> Info@holoulkom-construction.com</a>
+                <a href="#"><i class="fas fa-link"></i> www.Holoulkom-construction.com</a>
+                <a href="#"><i class="fas fa-search-location"></i> 7970 Dulum St., Al Narjis Dist., Riyadh, KSA</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="social-links">
+                <a href="AboutOurCompany.html"><i class="fas fa-angle-right"></i> About Us</a>
+                <a href="OurProject.html"><i class="fas fa-angle-right"></i> Our Projects</a>
+                <a href="Parteners.html"><i class="fas fa-angle-right"></i> Our Partners</a>
+                <a href="WhyChooseUs.html"><i class="fas fa-angle-right"></i> Why Choose Us</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span class="current-year">2025</span> Holoulkom. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html>

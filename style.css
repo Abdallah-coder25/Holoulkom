@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+a {
+  color: #0066ff; 
+  text-decoration: none; 
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #0066ff;
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #0033aa;
+}
+
+a:hover::after {
+  width: 100%;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 102, 255, 0.2);
+  width: 100%;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.logo-img {
+  height: 50px;
+}
+
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #0033aa;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #0066ff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .nav-right.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+}
+footer {
+  background-color: #ffffff;
+  box-shadow: 0 -2px 8px rgba(0, 102, 255, 0.1);
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  color: #333;
+  font-size: 12px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 14px;
+  color: #0066ff;
+  background-color: #f0f4ff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 102, 255, 0.15);
+}
+
+.social-links a:hover {
+  background-color: #0066ff;
+  color: #fff;
+  transform: translateY(-4px);
+}
+

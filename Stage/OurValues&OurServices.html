@@ -1,0 +1,283 @@
+<!-- Our value & our service -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Values & Services - Holoulkom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+</head>
+<body>
+    <header>
+    <nav class="nav-container">        <div class="nav-left">
+            <img src="./assets/images/logo/logo.png" alt="Holoulkom Logo" class="logo-img">
+        </div>
+        <button class="menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-right" id="navLinks">
+            <a href="AboutOurCompany.html">About</a>
+            <a href="Message.html">Message</a>
+            <a href="Vission&Mission.html">Vision & Mission</a>
+            <a href="OurValues&OurServices.html">Our Values & Our Services</a>
+            <a href="Parteners.html">Partners & Sources</a>
+            <a href="OurProject.html">Our Projects</a>
+            <a href="WhyChooseUs.html">Why Choose Us</a>
+        </div>
+    </nav>
+</header>
+
+    <main class="services-section">
+        <!-- Values Section -->
+        <div class="values-container fade-in">
+            <h1 class="section-title">Our Core Values</h1>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-medal fa-3x"></i>
+                    <h3>Excellence</h3>
+                    <p>We strive for excellence in every project, maintaining the highest standards of quality and professionalism.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake fa-3x"></i>
+                    <h3>Integrity</h3>
+                    <p>We conduct our business with unwavering integrity, transparency, and ethical practices.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-lightbulb fa-3x"></i>
+                    <h3>Innovation</h3>
+                    <p>We embrace innovative solutions and cutting-edge technologies to deliver superior results.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users fa-3x"></i>
+                    <h3>Collaboration</h3>
+                    <p>We believe in the power of teamwork and building strong partnerships with our stakeholders.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services-container fade-in">
+            <h1 class="section-title">Our Services</h1>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/images/projects/sector1.png" alt="Construction Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Construction Services</h3>
+                        <div class="service-categories">
+                            <span class="category-tag">Commercial</span>
+                            <span class="category-tag">Residential</span>
+                        </div>
+                        <p>Comprehensive construction services including planning, execution, and management of projects across various sectors.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/images/projects/sector2.png" alt="Engineering Solutions">
+                    </div>
+                    <div class="service-content">
+                        <h3>Engineering Solutions</h3>
+                        <div class="service-categories">
+                            <span class="category-tag">Design</span>
+                            <span class="category-tag">Consulting</span>
+                        </div>
+                        <p>Expert engineering solutions with innovative approaches to complex construction challenges.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/images/projects/sector3.png" alt="Project Management">
+                    </div>
+                    <div class="service-content">
+                        <h3>Project Management</h3>
+                        <div class="service-categories">
+                            <span class="category-tag">Planning</span>
+                            <span class="category-tag">Execution</span>
+                        </div>
+                        <p>Professional project management ensuring timely delivery and cost-effective solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Request Form Section -->
+        <section class="service-form-section fade-in">
+            <div class="form-container glass-effect">
+                <div class="form-header">
+                    <h2>Request Our Services</h2>
+                    <p>Let us help you achieve your project goals</p>
+                </div>
+                <form id="serviceRequestForm" class="modern-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="organizationName" name="organizationName" required>
+                            <label for="organizationName">Organization Name</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select Service Type</option>
+                            <option value="construction">Construction</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="project-management">Project Management</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="projectSize" name="projectSize" required>
+                            <option value="">Estimated Project Size</option>
+                            <option value="small">Small (< 1M SAR)</option>
+                            <option value="medium">Medium (1M - 5M SAR)</option>
+                            <option value="large">Large (5M - 20M SAR)</option>
+                            <option value="enterprise">Enterprise (> 20M SAR)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+                        <label for="projectDescription">Project Description and Requirements</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="date" id="expectedStartDate" name="expectedStartDate" required>
+                        <label for="expectedStartDate">Expected Start Date</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the Terms and Conditions</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn pulse">
+                        <span>Submit Request</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section class="projects-showcase fade-in">
+            <div class="section-title">
+                <h2>Our Featured Projects</h2>
+                <p>Discover our successful implementations across various sectors</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-sector="1">
+                    <div class="project-image">
+                        <img src="assets/images/projects/sector1.png" alt="Infrastructure Project" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Infrastructure Development</h3>
+                            <p>Critical infrastructure projects for sustainable growth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-sector="2">
+                    <div class="project-image">
+                        <img src="assets/images/projects/sector2.png" alt="Urban Development" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Urban Development</h3>
+                            <p>Modern urban solutions for growing cities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-sector="3">
+                    <div class="project-image">
+                        <img src="assets/images/projects/sector3.png" alt="Commercial Projects" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Commercial Projects</h3>
+                            <p>State-of-the-art commercial facilities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-sector="4">
+                    <div class="project-image">
+                        <img src="assets/images/projects/sector4.png" alt="Residential Development" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Residential Development</h3>
+                            <p>Modern living spaces for communities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-sector="5">
+                    <div class="project-image">
+                        <img src="assets/images/projects/sector5.png" alt="Industrial Projects" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Industrial Projects</h3>
+                            <p>Advanced industrial facilities and infrastructure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fas fa-phone"></i> +966 57 002 8089</a>
+                <a href="#"><i class="fas fa-at"></i> Info@holoulkom-construction.com</a>
+                <a href="#"><i class="fas fa-link"></i> www.Holoulkom-construction.com</a>
+                <a href="#"><i class="fas fa-search-location"></i> 7970 Dulum St., Al Narjis Dist., Riyadh, KSA</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="social-links">
+                <a href="AboutOurCompany.html"><i class="fas fa-angle-right"></i> About Us</a>
+                <a href="OurProject.html"><i class="fas fa-angle-right"></i> Our Projects</a>
+                <a href="Parteners.html"><i class="fas fa-angle-right"></i> Our Partners</a>
+                <a href="WhyChooseUs.html"><i class="fas fa-angle-right"></i> Why Choose Us</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span class="current-year">2025</span> Holoulkom. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/services.js"></script>
+</body>
+</html>
